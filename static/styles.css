@@ -1,0 +1,18 @@
+body {
+    background: #a7ff9f;
+}
+
+#contents {
+    width: 60%;
+    background: #bfceff;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#results {
+    background: rgb(255, 183, 183);
+    padding: 10px;
+    margin-top: 40px;
+}

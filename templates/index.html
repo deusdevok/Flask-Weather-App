@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div id="contents">
+        <h1>Weather App !</h1>
+
+        <form method="post" action="{{ url_for('get_weather') }}">
+            <label for="city">City</label>
+            <input name="city" type="text" value="{{ request.form['city'] }}">
+            
+            <input type="submit" value="Get Weather">
+
+            
+            
+        </form>
+
+        {% if data %}
+        <div id="results">
+            <img src="http://openweathermap.org/img/wn/{{ data.weather[0].icon }}@2x.png" alt="weather icon"><br>
+
+            <p>You entered: {{ city }}</p><br>
+
+            <p>Temperature: {{ data.main.temp }} °C</p>
+            <p>Temperature feeling: {{ data.main.feels_like }} °C</p><br>
+
+            <p>{{ data.weather[0].description }}</p>
+
+        </div>
+        {% endif %}
+
+    </div>
+</body>
+</html>
