@@ -13,5 +13,5 @@
 - Activate the virtual environment
     - `venv\Scripts\activate`
 - Make a new file called `local_settings.py` and store your API Secret Key in a variable called `SECRET_KEY`
-    - `SECRET_KEY = '5348e332edf6b2271ea2dd9e9f0c3c9c'`
+    - `SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'`
 - `pip install -r requirements.txt`
