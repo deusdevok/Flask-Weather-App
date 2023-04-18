@@ -1,6 +1,6 @@
 # Weather app using Flask and OpenWeather API
 
-Blog post explaining how to make this app step by step: https://deusdev.tech/blog/flask-weather-app/
+Blog post explaining how to make this app step by step: https://deusdev.click/blog/flask-weather-app/
 
 - Using [https://openweathermap.org/](https://openweathermap.org/)
 - API docs: [https://openweathermap.org/forecast5](https://openweathermap.org/forecast5)
